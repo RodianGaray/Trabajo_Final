@@ -68,48 +68,46 @@ def scrape_producto(url, carpeta):
     semaforo.release()
 ```
 
-🖼️ Evidencias
+### Evidencias
+####
 ![Trabajo_Final](1.png)  
+####
 ![Trabajo_Final](2.png)  
-![Trabajo_Final](3.png)  
+####
+![Trabajo_Final](ejemplo.png)  
+####
 ![Trabajo_Final](4.png)  
-![Trabajo_Final](5.png)  
+  
 
 ##  2. Proceso ETL (Módulo 2)
-✔️ Requerimientos
-
+### Requerimientos
 Preprocesamiento y procesamiento multihilo.
-
 Limpieza de imágenes (detección de archivos dañados).
-
 Transformación de datos y extracción de información relevante.
 
-Documentación del uso de hilos.
+### Documentación del uso de hilos.
 
-🔄 Flujo ETL
+#### Flujo ETL
 E – Extracción
 
 Se cargan las imágenes obtenidas del scraping.
 
-T – Transformación
+#### T – Transformación
 
 Eliminación de duplicados
-
 Validación de imágenes dañadas
-
 Conversión de formato
-
 Estandarización de tamaños
-
 Corrección automática de nombres
 
-L – Carga
+####  L – Carga
 
 Organización por carpetas
 
 Opcional: guardar metadatos en CSV/SQLite
 
-🔧 Código Base del Proceso ETL
+### Código Base del Proceso ETL
+```
 from PIL import Image
 import os
 import threading
@@ -138,13 +136,14 @@ for folder in os.listdir("data/"):
 
 for t in threads:
     t.join()
+```
+### Evidencias
+####
+![Trabajo_Final](5.png)  
 
-🖼️ Evidencias
-
-👉 Coloca aquí capturas del proceso ETL y carpetas limpias.
 
 ## 3. Clasificación con MediaPipe y Velocidad con OpenCV2 (Módulo 3)
-✔️ Requerimientos
+### Requerimientos
 
 Clasificación de elementos con MediaPipe.
 
@@ -154,10 +153,10 @@ Funcionamiento en tiempo real con cámara de PC.
 
 Explicación del manejo de hilos.
 
-🧠 Clasificación con MediaPipe
+### Clasificación con MediaPipe
 
-Ejemplo simple:
-
+### Ejemplo simple:
+```
 import mediapipe as mp
 import cv2
 
@@ -179,27 +178,25 @@ with mp_obj.Hands() as hands:
             break
 
 cap.release()
-
-🏃‍♂️ Detección de velocidad con OpenCV
+```
+### Detección de velocidad con OpenCV
 
 Se rastrea una persona cuadro a cuadro:
-
 Posición anterior (x1,y1)
-
 Posición nueva (x2,y2)
-
 Distancia recorrida
-
 Tiempo transcurrido
-
 Velocidad = distancia / tiempo
 
 🖼️ Evidencias
+####
+![Trabajo_Final](6.png) 
+####
+![Trabajo_Final](6,1.png)  
 
-👉 Agrega captura del video con recuadros y velocidad.
 
 ## 4. Despliegue con Docker + Streamlit (Módulo 4)
-✔️ Requerimientos
+### Requerimientos
 
 Aplicación empacada en un contenedor Docker.
 
@@ -211,7 +208,8 @@ Subir imagen del contenedor a DockerHub.
 
 README bien redactado.
 
-🐳 Dockerfile ejemplo
+#### Dockerfile 
+```
 FROM python:3.10
 
 WORKDIR /app
@@ -221,39 +219,35 @@ RUN pip install -r requirements.txt
 
 EXPOSE 8501
 CMD ["streamlit", "run", "app.py"]
+````
 
-▶️ Correr contenedor localmente
+#### Correr contenedor localmente
+```
 docker build -t proyecto-tercer-corte .
 docker run -p 8501:8501 proyecto-tercer-corte
-
-🌐 Despliegue en Streamlit
+```
+#### Despliegue en Streamlit
 
 Subir repo a GitHub
-
 Ir a share.streamlit.io
-
 Conectar repositorio
-
 Seleccionar archivo app.py
 
-🔗 DockerHub
+#### DockerHub
 docker tag proyecto-tercer-corte usuario/proyecto-tercer-corte
 docker push usuario/proyecto-tercer-corte
 
-🖼️ Evidencias
+### Evidencias
+####
+![Trabajo_Final](12.png)  
+####
+![Trabajo_Final](10.png) 
+####
+![Trabajo_Final](11.png)  
+####
+![Trabajo_Final](docker.png)  
+####
+![Trabajo_Final](7.png)  
+![Trabajo_Final](8.png)  
 
-👉 Coloca captura del Docker ejecutando, Streamlit en web y DockerHub.
 
-📚 Conclusiones
-
-Este proyecto integra:
-
-Scraping profesional con manejo de concurrencia
-
-ETL completo para asegurar calidad de datos
-
-Procesamiento multimedia con IA y visión por computadora
-
-Despliegue moderno con Docker y Streamlit
-
-Es la unión de varias áreas avanzadas de la ingeniería.
