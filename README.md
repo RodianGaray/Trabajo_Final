@@ -1,4 +1,4 @@
-🚀 Proyecto Tercer Corte – Ingeniería de Sistemas
+# Proyecto Tercer Corte – Ingeniería de Sistemas
 
 Este repositorio contiene el desarrollo completo del proyecto solicitado por La Santoto, compuesto por cuatro grandes módulos:
 
@@ -12,7 +12,7 @@ Despliegue en Docker + Streamlit
 
 El trabajo incluye uso obligatorio de hilos, secciones críticas, mutex, semaforización, y documentación detallada del proceso.
 
-🟨 1. Web Scraping con Selenium (Módulo 1)
+## 1. Web Scraping con Selenium (Módulo 1)
 ✔️ Requerimientos del laboratorio
 
 Desarrollo de web scraping usando Selenium.
@@ -95,8 +95,7 @@ def scrape_producto(url, carpeta):
 🖼️ Evidencias
 
 👉 Aquí agregas las capturas del scraping trabajando, descargas, carpetas creadas, etc.
-
-🟦 2. Proceso ETL (Módulo 2)
+##  2. Proceso ETL (Módulo 2)
 ✔️ Requerimientos
 
 Preprocesamiento y procesamiento multihilo.
@@ -164,7 +163,7 @@ for t in threads:
 
 👉 Coloca aquí capturas del proceso ETL y carpetas limpias.
 
-🟩 3. Clasificación con MediaPipe y Velocidad con OpenCV2 (Módulo 3)
+## 3. Clasificación con MediaPipe y Velocidad con OpenCV2 (Módulo 3)
 ✔️ Requerimientos
 
 Clasificación de elementos con MediaPipe.
@@ -219,7 +218,7 @@ Velocidad = distancia / tiempo
 
 👉 Agrega captura del video con recuadros y velocidad.
 
-🟧 4. Despliegue con Docker + Streamlit (Módulo 4)
+## 4. Despliegue con Docker + Streamlit (Módulo 4)
 ✔️ Requerimientos
 
 Aplicación empacada en un contenedor Docker.
