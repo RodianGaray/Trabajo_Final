@@ -8,43 +8,24 @@ Despliegue en Docker + Streamlit
 El trabajo incluye uso obligatorio de hilos, secciones críticas, mutex, semaforización, y documentación detallada del proceso.
 
 ## 1. Web Scraping con Selenium (Módulo 1)
-✔️ Requerimientos del laboratorio
-
+### Requerimientos del laboratorio
 Desarrollo de web scraping usando Selenium.
-
 Implementación con hilos, mutex, zona crítica, semaforización.
-
 Búsqueda de al menos 10 elementos electrónicos.
-
 Obtención mínima de 200 imágenes por cada elemento.
-
 Documentar paso a paso el funcionamiento del algoritmo.
 
-📁 Estructura del módulo
-/scraping/
-│── scraper.py
-│── downloader.py
-│── threads.py
-│── /data/
-│     └── /<producto>/
-│             └── imágenes...
+ Descripción del Algoritmo Multihilo
 
-🧵 Descripción del Algoritmo Multihilo
-
-El sistema usa:
+### El sistema usa:
 
 ThreadPool para ejecutar descargas paralelas
-
 Mutex (Lock) para proteger la sección crítica al escribir archivos
-
 Semáforo para controlar cuántos hilos pueden acceder al navegador
-
 Colas (Queue) para distribuir las tareas
 
-🔧 Código base del Web Scraping (ejemplo)
-
-Reemplaza con tu versión si ya la tienes implementada.
-
+### Código base del Web Scraping :
+```
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import threading
@@ -85,11 +66,15 @@ def scrape_producto(url, carpeta):
 
     driver.quit()
     semaforo.release()
-
+```
 
 🖼️ Evidencias
+![Trabajo_Final](1.png)  
+![Trabajo_Final](2.png)  
+![Trabajo_Final](3.png)  
+![Trabajo_Final](4.png)  
+![Trabajo_Final](5.png)  
 
-👉 Aquí agregas las capturas del scraping trabajando, descargas, carpetas creadas, etc.
 ##  2. Proceso ETL (Módulo 2)
 ✔️ Requerimientos
 
