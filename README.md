@@ -69,13 +69,13 @@ def scrape_producto(url, carpeta):
 ```
 
 ### Evidencias
-####
+#### Ejecutando para la seleccion de imagenes en las paginas web
 ![Trabajo_Final](1.png)  
-####
+
 ![Trabajo_Final](2.png)  
-####
+#### Carpeta resultante de la busqueda en internert
 ![Trabajo_Final](ejemplo.png)  
-####
+#### 10 carpetas creadas cada una con un componente diferente con las imagenes encontradas
 ![Trabajo_Final](4.png)  
   
 
@@ -138,7 +138,7 @@ for t in threads:
     t.join()
 ```
 ### Evidencias
-####
+#### Analisis de las imagenes para ver cuales son validas y cuales no se analizan las casi 2000 imagenes (200 por cadacomponente)
 ![Trabajo_Final](5.png)  
 
 
@@ -188,10 +188,10 @@ Distancia recorrida
 Tiempo transcurrido
 Velocidad = distancia / tiempo
 
-🖼️ Evidencias
-####
+### Evidencias
+#### En movimiento
 ![Trabajo_Final](6.png) 
-####
+#### Quieto como estatua 
 ![Trabajo_Final](6,1.png)  
 
 
@@ -238,16 +238,17 @@ docker tag proyecto-tercer-corte usuario/proyecto-tercer-corte
 docker push usuario/proyecto-tercer-corte
 
 ### Evidencias
-####
-![Trabajo_Final](12.png)  
-####
+
+#### Generacion del docker con los 3 puntos unificados 
 ![Trabajo_Final](10.png) 
-####
-![Trabajo_Final](11.png)  
-####
+![Trabajo_Final](11.png)
+#### Url generada gracias a docker
+![Trabajo_Final](12.png)  
+#### Docker mostrando el documento proyecto final 
 ![Trabajo_Final](docker.png)  
-####
+#### Streamlit generado con las 3 opciones  
 ![Trabajo_Final](7.png)  
+#### Despliegue de opciones como evidencia de los 3 puntos anteriores 
 ![Trabajo_Final](8.png)  
 
 
