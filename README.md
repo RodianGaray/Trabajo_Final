@@ -1,15 +1,10 @@
 # Proyecto Tercer Corte – Ingeniería de Sistemas
 
 Este repositorio contiene el desarrollo completo del proyecto solicitado por La Santoto, compuesto por cuatro grandes módulos:
-
 Web Scraping multihilo con Selenium
-
 Proceso ETL (Extracción, Transformación y Carga)
-
 Clasificación con MediaPipe y análisis de velocidad con OpenCV2
-
 Despliegue en Docker + Streamlit
-
 El trabajo incluye uso obligatorio de hilos, secciones críticas, mutex, semaforización, y documentación detallada del proceso.
 
 ## 1. Web Scraping con Selenium (Módulo 1)
