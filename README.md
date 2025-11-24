@@ -1,4 +1,5 @@
-# Proyecto Tercer Corte – Ingeniería de Sistemas
+# Proyecto Tercer Corte – Ingeniería Electronica
+
 
 Este repositorio contiene el desarrollo completo del proyecto solicitado por La Santoto, compuesto por cuatro grandes módulos:
 Web Scraping multihilo con Selenium
